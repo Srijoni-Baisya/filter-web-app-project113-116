@@ -1,0 +1,43 @@
+body{
+    background-position: center;
+    background-size: cover;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px darkgrey;
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: lightpink;
+    width: 50%;
+    border: 5px dotted;
+    padding:5px;
+    box-shadow: 5px 5px 10px darkgrey;
+}
+.btn-success{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    border: 5px double black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px darkgrey;
+}
+.btn-success:hover{
+    background-color: purple;
+}
+canvas{
+    border: 8px solid black;
+    background:linen;
+    animation-name: filter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes filter{
+    from{box-shadow: 2px 2px 30px red;}
+    to{box-shadow: 2px 2px 30px yellow;}
+}
