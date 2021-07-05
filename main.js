@@ -1,5 +1,8 @@
+var noseX = 0;
+var noseY = 0;
 function preload(){
 //insert filter img link
+img = loadImage("https://i.postimg.cc/dVfJBh8K/mustache.png");
 }
 
 function setup(){
@@ -29,12 +32,17 @@ function gotPoses(results){
         console.log(results);
         console.log("Nose x coordinate = "+ results[0].pose.nose.x);
         console.log("Nose y coordinate = "+ results[0].pose.nose.y);
+        noseX = results[0].pose.nose.x;
+        noseY = results[0].pose.nose.y;
     }
 }
 
 function draw(){
     //part2 - load webcam on canvas
     image(video,0,0,550,550);
+
+    //place mustache filter
+    image(img,noseX-50,noseY,100,30);
 }
 function take_snapshot(){
     save('mustache_filter_image.png');//save img
