@@ -42,7 +42,7 @@ function draw(){
     image(video,0,0,550,550);
 
     //place mustache filter
-    image(img,noseX-50,noseY,100,30);
+    image(img,noseX-48,noseY+5,100,30);
 }
 function take_snapshot(){
     save('mustache_filter_image.png');//save img
